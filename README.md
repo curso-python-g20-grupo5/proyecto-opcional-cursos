@@ -57,23 +57,8 @@ Antes de comenzar, asegúrate de tener instalado:
 ---
 
 ## Estructura del Proyecto
-   opcional_cursos/
-├── cursos/                     # Aplicación principal
-│   ├── migrations/             # Migraciones para la base de datos
-│   ├── models.py               # Modelos del proyecto
-│   ├── views.py                # Vistas de la aplicación
-│   ├── services.py             # Funciones de lógica de negocio
-│   ├── urls.py                 # Rutas específicas de la app
-│   ├── admin.py                # Configuración del panel de administración
-│   ├── serializers.py          # Serializadores para API (opcional)
-│   └── templates/cursos/       # Plantillas HTML
-├── opcional_cursos/            # Configuración principal del proyecto
-│   ├── settings.py             # Configuración global
-│   ├── urls.py                 # Rutas del proyecto
-│   └── wsgi.py                 # Configuración WSGI
-├── db.sqlite3                  # Base de datos SQLite (opcional)
-├── manage.py                   # Herramienta de línea de comandos de Django
-└── README.md                   # Documentación del proyecto
+  ![Captura de pantalla 2024-11-25 211920](https://github.com/user-attachments/assets/3a34dba4-6a4a-4137-82f7-142326eb6f73)
+
 
 ---
 
