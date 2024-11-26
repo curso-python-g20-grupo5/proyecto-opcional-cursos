@@ -1,0 +1,71 @@
+[
+    {
+        "model": "cursos.direccion",
+        "pk": 1,
+        "fields": {
+            "calle": "Calle Falsa 123",
+            "ciudad": "Springfield",
+            "pais": "EEUU"
+        }
+    },
+    {
+        "model": "cursos.direccion",
+        "pk": 2,
+        "fields": {
+            "calle": "Calle Real",
+            "ciudad": "Shelbyville",
+            "pais": "EEUU"
+        }
+    },
+    {
+        "model": "cursos.direccion",
+        "pk": 3,
+        "fields": {
+            "calle": "Calle Central",
+            "ciudad": "Springfield",
+            "pais": "EEUU"
+        }
+    },
+    {
+        "model": "cursos.profesor",
+        "pk": 1,
+        "fields": {
+            "nombre": "John Doe",
+            "email": "john@example.com",
+            "direccion": 2
+        }
+    },
+    {
+        "model": "cursos.estudiante",
+        "pk": 1,
+        "fields": {
+            "nombre": "Jane Roe",
+            "email": "jane@example.com",
+            "direccion": 3
+        }
+    },
+    {
+        "model": "cursos.curso",
+        "pk": 1,
+        "fields": {
+            "nombre": "Matemáticas",
+            "descripcion": "Curso básico de matemáticas"
+        }
+    },
+    {
+        "model": "cursos.curso",
+        "pk": 2,
+        "fields": {
+            "nombre": "Física",
+            "descripcion": "Curso introductorio de física"
+        }
+    },
+    {
+        "model": "cursos.curso",
+        "pk": 3,
+        "fields": {
+            "nombre": "Django Avanzado",
+            "descripcion": "Curso sobre desarrollo avanzado con Django"
+        }
+    }
+]
