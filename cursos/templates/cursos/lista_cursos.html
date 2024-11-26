@@ -1,14 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Cursos</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2f4858; /* Color de fondo */
+            color: #ffffff;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #1a1a2e; /* Fondo del encabezado */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #ffffff;
+        }
+
+        /* Contenedor principal */
+        .container {
+            margin: 2rem auto;
+            max-width: 800px;
+            background-color: #ffffff; /* Fondo de la lista */
+            color: #333333;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #2f4858; /* Color del título */
+            margin-bottom: 1rem;
+        }
+
+        /* Lista de cursos */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #f5f5f5; /* Fondo de cada elemento */
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 1.1rem;
+        }
+
+        li span {
+            font-weight: bold;
+            color: #ff5722; /* Color para el nombre del curso */
+        }
+    </style>
 </head>
 <body>
-    <h1>Lista de Cursos</h1>
-    <ul>
-        {% for curso in cursos %}
-            <li>{{ curso.nombre }}: {{ curso.descripcion }}</li>
-        {% endfor %}
-    </ul>
+    <!-- Encabezado -->
+    <header>
+        <h1>G3 Cursos</h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h2>Lista de Cursos</h2>
+        <ul>
+            {% for curso in cursos %}
+                <li><span>{{ curso.nombre }}</span>: {{ curso.descripcion }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 </body>
 </html>
